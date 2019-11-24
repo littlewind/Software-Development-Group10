@@ -17,7 +17,7 @@ public class SoftwareDevelopmentApplication {
 
     public static void main(String[] args) {
 
-    	ConfigurableApplicationContext ctx = new SpringApplicationBuilder(LoginScreen.class)
+    	ConfigurableApplicationContext ctx = new SpringApplicationBuilder(SoftwareDevelopmentApplication.class)
                 .headless(false).run(args);
     	
 //    	String[] allBeanNames = ctx.getBeanDefinitionNames();

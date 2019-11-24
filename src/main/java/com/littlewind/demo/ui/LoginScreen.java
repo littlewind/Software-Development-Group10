@@ -19,15 +19,11 @@ import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.stereotype.Service;
 
 import com.littlewind.demo.entity.Employee;
 import com.littlewind.demo.service.EmployeeService;
 
-@ComponentScan(basePackages = { "com.littlewind.demo" })
+@org.springframework.stereotype.Component
 public class LoginScreen extends JFrame {
 	@Autowired
 	EmployeeService employeeService;
